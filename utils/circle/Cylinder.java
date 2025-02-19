@@ -1,4 +1,3 @@
-package utils.circle;
 /* sam008: Cylinder.java
  *
  * Inheritance and Method Overriding
@@ -13,7 +12,6 @@ public class Cylinder extends Circle
     // default constructor
     public Cylinder()
     {
-        super();
 
         length = 1.0; // default length of 1.0
     }
@@ -21,7 +19,6 @@ public class Cylinder extends Circle
 
     public Cylinder(double aRadius, double aLength)
     {
-        super(aRadius);
 
         length = aLength;   // default length of 1.0
     }
@@ -35,16 +32,16 @@ public class Cylinder extends Circle
 
     public double calcVolume()
     {
-        return this.length * Math.PI * (this.getRadius() * this.getRadius());
+		return (this.calcArea() * this.getLength());
     }
 
-    /* Calculate surface area of cylinder
+    /** Calculate surface area of cylinder
     *  This method overrides calcArea() inherited from Circle class
     **/
-    @Override
+	  @Override
     public double calcArea()
     {
-        return 2 * super.calcArea() + ( 2 * getRadius() * Math.PI ) * length;
+      return ((2 * Math.PI) * super.getRadius() * this.length) + ((2 * Math.PI) * (super.getRadius() * super.getRadius()));
     }
 
 }
