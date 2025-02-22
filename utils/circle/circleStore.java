@@ -24,5 +24,18 @@ public class circleStore {
         }
     }
 
-    
+    public void showAreas() {
+        //Initialise for loop
+        for (int i = 0; i < hoops.size(); i++) {
+            System.out.println(hoops.get(i).calcArea());
+        }
+    }
+
+    public void showCylinderLengths() {
+        //Initialise for loop
+        for (int i = 0; i < hoops.size(); i++) {
+            //Print all cylinder lengths
+            //System.out.println(hoops.get(i).getLength());
+        }
+    }
 }
