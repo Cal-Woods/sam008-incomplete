@@ -1,4 +1,4 @@
-package utils.worker;
+package worker;
 
 public class Worker {
 }
