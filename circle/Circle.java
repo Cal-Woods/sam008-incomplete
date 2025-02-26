@@ -1,8 +1,4 @@
-package utils.circle;
-/* sam008: Circle.java
- *
- *  This class is complete and should compile without errors
- */
+package circle;
 
 public class Circle
 {

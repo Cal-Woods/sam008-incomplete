@@ -1,3 +1,4 @@
+package circle;
 import java.util.ArrayList;
 
 public class circleStore {
@@ -34,8 +35,11 @@ public class circleStore {
     public void showCylinderLengths() {
         //Initialise for loop
         for (int i = 0; i < hoops.size(); i++) {
-            //Print all cylinder lengths
-            //System.out.println(hoops.get(i).getLength());
+            //check if instance of cylinder
+            if(hoops.get(i) instanceof Cylinder) {
+                //Print all cylinder lengths
+                System.out.println(((Cylinder) hoops.get(i)).getLength());
+            }
         }
     }
 }

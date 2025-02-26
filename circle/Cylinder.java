@@ -1,3 +1,4 @@
+package circle;
 /* sam008: Cylinder.java
  *
  * Inheritance and Method Overriding
@@ -27,12 +28,12 @@ public class Cylinder extends Circle
     // getter method for length
     public double getLength()
     {
-		return this.length;
+		    return this.length;
     }
 
     public double calcVolume()
     {
-		return (this.calcArea() * this.getLength());
+		    return (this.calcArea() * this.getLength());
     }
 
     /** Calculate surface area of cylinder
@@ -41,7 +42,6 @@ public class Cylinder extends Circle
 	  @Override
     public double calcArea()
     {
-      return ((2 * Math.PI) * super.getRadius() * this.length) + ((2 * Math.PI) * (super.getRadius() * super.getRadius()));
+        return ((2 * Math.PI) * super.getRadius() * this.length) + ((2 * Math.PI) * (super.getRadius() * super.getRadius()));
     }
-
 }
