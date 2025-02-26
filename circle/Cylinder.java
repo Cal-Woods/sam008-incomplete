@@ -20,6 +20,7 @@ public class Cylinder extends Circle
 
     public Cylinder(double aRadius, double aLength)
     {
+        super.setRadius(aRadius);
 
         length = aLength;   // default length of 1.0
     }
