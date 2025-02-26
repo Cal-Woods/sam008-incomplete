@@ -1,7 +1,7 @@
 package app;
 
-import utils.circle.Circle;
-import utils.circle.Cylinder;
+import circle.Circle;
+import circle.Cylinder;
 
 public class Sam008 {
     public static void main(String[] args) {
